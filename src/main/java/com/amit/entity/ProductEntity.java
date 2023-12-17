@@ -1,18 +1,13 @@
 package com.amit.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Setter
-@Getter
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -26,6 +21,30 @@ public class ProductEntity {
 	private String priductName;
 	
 	private Double productPrice;
+
+	public Integer getProductId() {
+		return productId;
+	}
+
+	public void setProductId(Integer productId) {
+		this.productId = productId;
+	}
+	
+	public String getPriductName() {
+		return priductName;
+	}
+
+	public void setPriductName(String priductName) {
+		this.priductName = priductName;
+	}
+
+	public Double getProductPrice() {
+		return productPrice;
+	}
+
+	public void setProductPrice(Double productPrice) {
+		this.productPrice = productPrice;
+	}
 
 	
 }
